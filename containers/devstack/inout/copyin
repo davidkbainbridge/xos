@@ -1,0 +1,10 @@
+#!/bin/bash
+
+BASE=/usr/local/src/devstack
+LIST="lib/databases/mysql lib/tls lib/nova lib/apache lib/ironic lib/keystone lib/lvm"
+
+eval $(docker-machine env default)
+
+for i in $LIST; do
+  docker cp `basename $i` $1:$BASE/$i
+ done

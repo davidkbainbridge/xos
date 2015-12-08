@@ -60,6 +60,15 @@ executing the following will build and run the synchronizer container:
 $ cd synchronizer; make build && make run
 ```
 
+#### DevStack Container
+
+Provides an OpenStack DevStack environment that can be used with XOS. The
+following will build and devstack container:
+
+```
+$ cd devstack; make build
+```
+
 #### Solution Compose File ![](https://img.shields.io/badge/compose-beta-red.svg)
 
 [Docker Compose](https://docs.docker.com/compose/) is a tool for defining and

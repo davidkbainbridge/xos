@@ -1,4 +1,5 @@
 FROM       xosproject/xos
+MAINTAINER XOS Project http://xosproject.org
 
 # Install custom Ansible
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
